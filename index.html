@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<center><h1 class="name">An Project by Musab</h1></center>
+    <div class="container">
+        <svg class="header-svg" viewBox="0 0 100 20">
+            <text x="0" y="15" fill="#4a90e2" font-family="Arial" font-size="15">Marksheet Calculator</text>
+        </svg>
+        <form id="marksForm">
+            <div class="input-group">
+                <input type="text" id="name" placeholder="Student Name" required>
+            </div>
+            <div class="subject-group">
+                <input type="number" class="subject-mark" placeholder="Subject 1" required>
+                <input type="number" class="subject-mark" placeholder="Subject 2" required>
+                <input type="number" class="subject-mark" placeholder="Subject 3" required>
+                <input type="number" class="subject-mark" placeholder="Subject 4" required>
+                <input type="number" class="subject-mark" placeholder="Subject 5" required>
+            </div>
+            <button type="submit">
+                <i class="fas fa-plus"></i>
+                Add Student
+            </button>
+        </form>
+        <div class="results-card">
+            <h2>Results</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Total Marks</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody id="results"></tbody>
+            </table>
+        </div>
+        <div id="balloons"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
